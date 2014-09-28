@@ -6,5 +6,5 @@ interface ActionInterface
 	 * Send the response back to the client.
 	 * @return void
 	 */
-    public function send();
+    public function send($params);
 }
