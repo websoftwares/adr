@@ -9,7 +9,7 @@ By taking some packages and using some simple objects and applying some principl
 ## Acknowledgement
 [P.M Jones](https://github.com/pmjones/adr) for writing this paper.
 
-[Symfony](http://symfony.com/) for the http foundation.
+[Symfony](http://symfony.com/) for the HTTP foundation.
 
 [Aura](http://symfony.com/) for the router.
 
