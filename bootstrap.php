@@ -53,21 +53,21 @@ $ioc->register("router",function () {
 $ioc->register("pages",function () {
     $pages = [];
 
-    $page1 = new Websoftwares\Adr\Domain\DummyEntity;
+    $page1 = new Websoftwares\Adr\Domain\DummyEntity();
     $page1->title = "About";
-    $page1->body = "Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Nulla dolor dolor, 
-        blandit sit amet urna sit amet, feugiat luctus ante. 
-        Curabitur consequat sem sit amet varius cursus. 
-        Quisque orci sapien, porttitor sit amet augue vitae, 
-        eleifend ultricies est. Vestibulum ac nulla volutpat, 
+    $page1->body = "Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Nulla dolor dolor,
+        blandit sit amet urna sit amet, feugiat luctus ante.
+        Curabitur consequat sem sit amet varius cursus.
+        Quisque orci sapien, porttitor sit amet augue vitae,
+        eleifend ultricies est. Vestibulum ac nulla volutpat,
         placerat lectus eget, faucibus lectus.";
 
     $pages[1] = $page1;
     $page2 = clone $page1;
     $page2->title = "Contact";
     $pages[2] = $page2;
-        
+
     return $pages;
 });
 
