@@ -17,7 +17,7 @@ class PageReadAction implements ActionInterface
         $this->responder = $responder;
     }
 
-    public function send($params)
+    public function send(array $params)
     {
         $this->responder->setVariables("data", $this->domain->resolve("pages")[$params["id"]]);
 

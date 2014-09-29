@@ -3,8 +3,8 @@ namespace Websoftwares\Adr\Action;
 interface ActionInterface
 {
     /**
-	 * Send the response back to the client.
-	 * @return void
+	 * send    Send the response back to the client.
+	 * @param  array $params
 	 */
-    public function send($params);
+    public function send(array $params);
 }
