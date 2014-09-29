@@ -12,10 +12,14 @@ class PageReadResponder extends AbstractResponder
         $this->response = $response;
     }
 
-    public function send()
+    public function send($contentType)
     {
         $this->response->setContent($this->render());
-        $this->response->headers->set('Content-Type', 'text/html');
+        if ($contentType === ".html") {
+            $this->response->headers->set('Content-Type', 'text/html');
+        } elseif ($contentType === ".json") {
+            $this->response->headers->set('Content-Type', 'application/json');
+        }
         $this->response->send();
     }
 }

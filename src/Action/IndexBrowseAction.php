@@ -19,7 +19,7 @@ class IndexBrowseAction implements ActionInterface
 
     public function send(array $params)
     {
-        $this->responder->setVariables("data", ["Hello" => "world"]);
+        $this->responder->setVariables("data", ["title" => "Hello World", "body" => "Hello World"]);
 
         return $this->responder->send();
     }

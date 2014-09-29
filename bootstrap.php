@@ -27,16 +27,16 @@ $ioc->register("router",function () {
     $router_factory = new \Aura\Router\RouterFactory();
     $router = $router_factory->newInstance();
 
-    // Home route
     $router->addGet('index.browse', '/')
         ->addValues([
             'action' => "IndexBrowseAction",
-            'format' => '.json'
+            'format' => '.html'
             ]);
 
-    $router->addGet('page.read', '/page/{id}')
+    $router->addGet('page.read', '/page/{id}{format}')
         ->addTokens([
-            'id'     => '\d+'
+            'id'     => '\d+',
+            'format' => '(\.json|\.html)?'
         ])
         ->addValues([
             'action' => "PageReadAction",

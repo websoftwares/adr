@@ -15,7 +15,7 @@ class IndexBrowseResponder extends AbstractResponder
     public function send()
     {
         $this->response->setContent($this->render());
-        $this->response->headers->set('Content-Type', 'application/json');
+        $this->response->headers->set('Content-Type', 'text/html');
         $this->response->send();
     }
 }
