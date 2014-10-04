@@ -1,10 +1,11 @@
 <?php
-namespace Websoftwares\Adr\Action;
-use Symfony\Component\HttpFoundation\Request,
-    Websoftwares\Adr\Domain\IoCInterface as Domain,
-    Websoftwares\Adr\Responder\PageReadResponder as Responder;
+namespace Websoftwares\Adr\Action\Page;
+use Websoftwares\Adr\Action\ActionInterface,
+    Symfony\Component\HttpFoundation\Request,
+    Websoftwares\Adr\IoCInterface as Domain,
+    Websoftwares\Adr\Responder\Page\ReadResponder as Responder;
 
-class PageReadAction implements ActionInterface
+class ReadAction implements ActionInterface
 {
     public function __construct(
         Request $request,

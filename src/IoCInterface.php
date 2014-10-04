@@ -1,5 +1,5 @@
 <?php
-namespace Websoftwares\Adr\Domain;
+namespace Websoftwares\Adr;
 interface IoCInterface
 {
     public function register($name, \Closure $resolve);

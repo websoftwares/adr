@@ -1,10 +1,11 @@
 <?php
-namespace Websoftwares\Adr\Action;
-use Symfony\Component\HttpFoundation\Request,
-    Websoftwares\Adr\Domain\IoCInterface as Domain,
-    Websoftwares\Adr\Responder\IndexBrowseResponder as Responder;
+namespace Websoftwares\Adr\Action\Index;
+use Websoftwares\Adr\Action\ActionInterface,
+    Symfony\Component\HttpFoundation\Request,
+    Websoftwares\Adr\IoCInterface as Domain,
+    Websoftwares\Adr\Responder\Index\BrowseResponder as Responder;
 
-class IndexBrowseAction implements ActionInterface
+class BrowseAction implements ActionInterface
 {
     public function __construct(
         Request $request,

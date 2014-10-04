@@ -1,5 +1,5 @@
 <?php
-namespace Websoftwares\Adr\Domain;
+namespace Websoftwares\Adr;
 /**
  * class that implements inversion of control.
  */
@@ -23,12 +23,12 @@ class IoC implements IoCInterface
      * @param $name
      * @return object
      */
-    public function resolve($name)
+    public function resolve($name, $args = null)
     {
         if ($this->registered($name)) {
             $name = $this->registry[$name];
 
-            return $name();
+            return $args ? $name($args) : $name();
         }
         throw new \Exception('Nothing registered with that name.');
     }

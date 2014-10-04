@@ -1,9 +1,9 @@
 <?php
-namespace Websoftwares\Adr\Responder;
+namespace Websoftwares\Adr\Responder\Page;
 use Symfony\Component\HttpFoundation\Response,
     Websoftwares\Adr\AbstractResponder;
 
-class PageReadResponder extends AbstractResponder
+class ReadResponder extends AbstractResponder
 {
     public function __construct(
         Response $response

@@ -1,9 +1,9 @@
 <?php
-namespace Websoftwares\Adr\Responder;
+namespace Websoftwares\Adr\Responder\Index;
 use Symfony\Component\HttpFoundation\Response,
     Websoftwares\Adr\AbstractResponder;
 
-class IndexBrowseResponder extends AbstractResponder
+class BrowseResponder extends AbstractResponder
 {
     public function __construct(
         Response $response

@@ -17,7 +17,7 @@ include "vendor/autoload.php";
 | Config IoC container object.
 |--------------------------------------------------------------------------
 */
-$ioc = new Websoftwares\Adr\Domain\IoC();
+$ioc = new Websoftwares\Adr\IoC();
 /*
 |--------------------------------------------------------------------------
 | Config Router
@@ -29,7 +29,7 @@ $ioc->register("router",function () {
 
     $router->addGet('index.browse', '/')
         ->addValues([
-            'action' => "IndexBrowseAction",
+            'action' => "Index\\BrowseAction",
             'format' => '.html'
             ]);
 
@@ -39,7 +39,7 @@ $ioc->register("router",function () {
             'format' => '(\.json|\.html)?'
         ])
         ->addValues([
-            'action' => "PageReadAction",
+            'action' => "Page\\ReadAction",
             'format' => '.html'
         ]);
 
