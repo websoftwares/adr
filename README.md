@@ -11,7 +11,7 @@ By taking some packages and using some simple objects and applying some principl
 
 [Symfony](http://symfony.com/) for the HTTP foundation.
 
-[Aura](http://symfony.com/) for the router.
+[Aura](http://auraphp.com/) for the router.
 
 ## License
 The [MIT](http://opensource.org/licenses/MIT "MIT") License (MIT).
